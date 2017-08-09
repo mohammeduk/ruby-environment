@@ -15,5 +15,6 @@ sudo gem install bundler
 sudo gem install rails
 sudo gem install rake
 
-sudo rm /usr/nginx/sites-available/default
-sudo cp ~/app/environment/templates/default /usr/nginx/sites-available/default
+sudo rm /etc/nginx/sites-available/default
+sudo cp /home/ubuntu/app/environment/templates/default /etc/nginx/sites-available/default
+sudo service nginx reload
