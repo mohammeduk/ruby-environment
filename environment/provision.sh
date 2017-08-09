@@ -14,3 +14,6 @@ sudo apt-get install build-essential zlib1g-dev libgmp-dev libxml2 -y
 sudo gem install bundler
 sudo gem install rails
 sudo gem install rake
+
+sudo rm /usr/nginx/sites-available/default
+sudo cp ~/app/environment/templates/default /usr/nginx/sites-available/default
